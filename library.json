@@ -1,0 +1,12 @@
+{
+  "name": "AlashKeypadMatrix",
+  "keywords": "AlashKeypadMatrix, Alash",
+  "description": "Библиотека AlashKeypadMatrix предназначена для управления матричными клавиатурами в проектах с Arduino. Она упрощает работу с состояниями клавиш и событиями через структурированный подход",
+  "repository":
+  {
+    "type": "git",
+    "url": "https://github.com/Alash-electronics/AlashKeypadMatrix"
+  },
+  "frameworks": "arduino",
+  "platforms": "*"
+}

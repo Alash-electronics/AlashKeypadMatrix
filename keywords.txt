@@ -1,0 +1,43 @@
+# Библиотека Keypad: типы данных
+
+KeyState	KEYWORD1		// Состояние клавиши
+AlashKeypadMatrix	KEYWORD1		// Клавиатура
+KeypadEvent	KEYWORD1		// Событие клавиатуры
+
+# Константы библиотеки Keypad
+
+NO_KEY		LITERAL1	// Нет нажатой клавиши
+IDLE		LITERAL1	// Клавиша в состоянии ожидания
+PRESSED		LITERAL1	// Клавиша нажата
+HOLD		LITERAL1	// Клавиша удерживается
+RELEASED	LITERAL1	// Клавиша отпущена
+
+# Методы и функции библиотеки Keypad
+
+addEventListener	KEYWORD2	// Добавить слушателя событий
+bitMap			KEYWORD2	// Битовая карта клавиатуры
+findKeyInList		KEYWORD2	// Поиск клавиши в списке
+getKey			KEYWORD2	// Получить нажатую клавишу
+getKeys			KEYWORD2	// Получить состояния всех клавиш
+getState		KEYWORD2	// Получить состояние первой клавиши
+holdTimer		KEYWORD2	// Таймер удержания клавиши
+isPressed		KEYWORD2	// Проверить, нажата ли клавиша
+keyStateChanged		KEYWORD2	// Изменилось ли состояние клавиши
+numKeys			KEYWORD2	// Количество клавиш
+pin_mode		KEYWORD2	// Установить режим пина
+pin_write		KEYWORD2	// Записать в пин
+pin_read		KEYWORD2	// Прочитать из пина
+setDebounceTime		KEYWORD2	// Установить время подавления дребезга
+setHoldTime		KEYWORD2	// Установить время удержания
+waitForKey		KEYWORD2	// Ожидать нажатия клавиши
+
+# Это макрос, преобразующий 2D-массивы в указатели
+
+makeKeymap		KEYWORD2	// Создать карту клавиш
+
+# Список объектов, созданных в примерах скетчей
+
+kpd		KEYWORD3	// Объект клавиатуры
+keypad		KEYWORD3	// Объект клавиатуры
+kbrd		KEYWORD3	// Объект клавиатуры
+keyboard	KEYWORD3	// Объект клавиатуры
