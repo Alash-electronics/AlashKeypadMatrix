@@ -16,7 +16,7 @@
 ### setHoldTime(time): Устанавливает время удержания для клавиши.
 ## Пример использования:
 
-```{Processing}
+```{C++}
 
 {
 #include <AlashKeypadMatrix.h>
