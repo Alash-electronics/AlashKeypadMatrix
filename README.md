@@ -1,20 +1,27 @@
-# Библиотека AlashKeypadMatrix
-Библиотека AlashKeypadMatrix предназначена для упрощения работы с матричными клавиатурами, позволяя легко считывать нажатия клавиш и управлять ими. С помощью этой библиотеки можно легко интегрировать матричные клавиатуры в свои проекты на платформе Arduino.
+# AlashKeypadMatrix
 
-## Основные возможности:
-Поддержка матричных клавиатур различного размера (например, 4x4, 3x4 и т.д.).
-Простая настройка и инициализация клавиатуры с помощью функции makeKeymap.
-Обработка нажатий, удержаний и отпусканий клавиш.
-Поддержка событий для клавиш с использованием функции addEventListener.
-Легкое подключение к пинам Arduino для строк и столбцов матрицы клавиатуры.
-## Основные функции:
-### makeKeymap(keys): Создает карту клавиш на основе заданного массива символов.
-### begin(keymap): Инициализирует клавиатуру с заданной картой клавиш.
-### getKey(): Возвращает символ нажатой клавиши.
-### addEventListener(listener): Добавляет обработчик событий для клавиатуры.
-### getState(): Возвращает текущее состояние клавиши (нажата, удерживается, отпущена).
-### setHoldTime(time): Устанавливает время удержания для клавиши.
-## Пример использования:
+> 🌐 **English** | [Русский](README_ru.md)
+
+Arduino library that simplifies working with matrix keypads — reading key presses and driving events for keypads of any size (4x4, 3x4, etc.) with minimal setup.
+
+## Key features
+
+- Supports matrix keypads of any size (4x4, 3x4, and others)
+- Simple setup via `makeKeymap`
+- Handles press, hold, and release states
+- Event-driven API via `addEventListener`
+- Straightforward wiring to Arduino row/column pins
+
+## Core API
+
+- `makeKeymap(keys)` — builds a keymap from a character array
+- `begin(keymap)` — initializes the keypad with a given keymap
+- `getKey()` — returns the character of the currently pressed key
+- `addEventListener(listener)` — registers a callback for key events
+- `getState()` — returns the current key state (pressed, held, released)
+- `setHoldTime(time)` — sets how long a key must be held to register as "hold"
+
+## Example
 
 ```cpp
 #include <AlashKeypadMatrix.h>
@@ -57,9 +64,10 @@ void keypadEvent(KeypadEvent key) {
       break;
   }
 }
-
 ```
 
-### Рекомендуется ознакомиться со всеми примерами библиотеки, чтобы лучше понять её возможности и способы применения. Это поможет вам эффективно использовать библиотеку в ваших проектах.
+Check the bundled examples for more usage patterns, including multi-keypad setups and custom event handling.
 
-### Желаю вам удачи в ваших проектах! Пусть ваши разработки будут успешными и приносят удовольствие и новые знания. Удачи в кодинге и реализации всех ваших идей!
+## Other Arduino libraries from Alash-electronics
+
+[github.com/Alash-electronics](https://github.com/Alash-electronics)
